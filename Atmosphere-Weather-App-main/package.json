@@ -1,0 +1,20 @@
+{
+  "name": "atmosphere-weather-app",
+  "version": "0.1.0",
+  "description": "Atmosphere - simple weather app (Node.js + Express + OpenWeatherMap)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atmosphere — Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Atmosphere</h1>
+
+    <form id="searchForm">
+      <input
+        id="cityInput"
+        type="search"
+        placeholder="Enter city (e.g. London)"
+        aria-label="City"
+      />
+      <button type="submit">Search</button>
+      <button id="geoBtn" type="button">Use my location</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <h2 id="place"></h2>
+      <div id="weather">
+        <div id="icon"></div>
+        <div id="details">
+          <p id="description"></p>
+          <p><strong id="temp"></strong> °C</p>
+          <p>Feels like: <span id="feels"></span> °C</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind: <span id="wind"></span> m/s</p>
+        </div>
+      </div>
+    </section>
+
+    <p id="error" class="error hidden"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
